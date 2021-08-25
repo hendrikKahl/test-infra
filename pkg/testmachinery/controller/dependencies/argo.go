@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	argov1alpha1 "github.com/argoproj/argo/v2/pkg/apis/workflow/v1alpha1"
+	argov1alpha1 "github.com/argoproj/argo-workflows/v3/pkg/apis/workflow/v1alpha1"
 	"github.com/gardener/gardener/pkg/utils"
 
 	intconfig "github.com/gardener/test-infra/pkg/apis/config"

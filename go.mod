@@ -1,26 +1,25 @@
 module github.com/gardener/test-infra
 
-go 1.14
+go 1.16
 
 require (
 	cloud.google.com/go v0.81.0
 	cloud.google.com/go/storage v1.10.0
 	github.com/Masterminds/semver v1.5.0
 	github.com/Masterminds/sprig v2.22.0+incompatible
-	github.com/argoproj/argo/v2 v2.12.10
+	github.com/argoproj/argo-workflows/v3 v3.1.8
 	github.com/bradleyfalzon/ghinstallation v1.1.1
-	github.com/emicklei/go-restful v2.11.1+incompatible // indirect
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/gardener/component-cli v0.28.0
 	github.com/gardener/component-spec/bindings-go v0.0.52
 	github.com/gardener/gardener v1.19.1
 	github.com/gardener/gardener-resource-manager v0.22.0
 	github.com/gardener/gardener-resource-manager/api v0.22.0
-	github.com/ghodss/yaml v1.0.0
+	github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
 	github.com/go-ini/ini v1.51.1 // indirect
 	github.com/go-logr/logr v0.4.0
 	github.com/go-logr/zapr v0.3.0
-	github.com/go-openapi/spec v0.19.8
+	github.com/go-openapi/spec v0.20.2
 	github.com/gobuffalo/packr/v2 v2.8.0
 	github.com/golang/mock v1.5.0
 	github.com/google/go-github/v27 v27.0.4
