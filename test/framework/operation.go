@@ -109,11 +109,11 @@ func (o *Operation) WaitForMinioServiceReadiness(maxWaitTime time.Duration) (*co
 	return s3Config, utils.WaitForMinioService(s3Config.Server.Endpoint, maxWaitTime)
 }
 
-func (o *Operation) RunTestrunUntilCompleted(ctx context.Context, tr *tmv1beta1.Testrun, phase argov1.NodePhase, timeout time.Duration) (*tmv1beta1.Testrun, *argov1.Workflow, error) {
+func (o *Operation) RunTestrunUntilCompleted(ctx context.Context, tr *tmv1beta1.Testrun, phase argov1.WorkflowPhase, timeout time.Duration) (*tmv1beta1.Testrun, *argov1.Workflow, error) {
 	return utils.RunTestrunUntilCompleted(ctx, o.Log().WithValues("namespace", o.TestNamespace()), o.Client(), tr, phase, timeout)
 }
 
-func (o *Operation) RunTestrun(ctx context.Context, tr *tmv1beta1.Testrun, phase argov1.NodePhase, timeout time.Duration, watchFunc utils.WatchFunc) (*tmv1beta1.Testrun, *argov1.Workflow, error) {
+func (o *Operation) RunTestrun(ctx context.Context, tr *tmv1beta1.Testrun, phase argov1.WorkflowPhase, timeout time.Duration, watchFunc utils.WatchFunc) (*tmv1beta1.Testrun, *argov1.Workflow, error) {
 	return utils.RunTestrun(ctx, o.Log().WithValues("namespace", o.TestNamespace()), o.Client(), tr, phase, timeout, watchFunc)
 }
 
